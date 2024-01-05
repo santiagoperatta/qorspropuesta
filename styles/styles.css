@@ -1,0 +1,65 @@
+.bannerpadre {
+    overflow: hidden;
+    height: 700px;
+    position: relative; /* Añadir posición relativa */
+    z-index: 1; /* Establecer un z-index mayor para que esté por encima del menú */
+	background-image: url(../images/slider/slider1.jpg);
+	background-size: cover;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media only screen and (max-width: 1000px) {
+    .bannerpadre {
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .bannerpadre {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .bannerpadre {
+        height: 200px;
+    }
+}
+
+header {
+    position: relative;
+    z-index: 2; /* Establecer un z-index menor para que esté detrás del banner */
+}
+
+.logoPrincipal {
+    min-width: 220px;
+    max-width: 420px;
+	padding: 20px;
+    margin: auto;
+}
+
+.wrapper{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.horizontal-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 16px;
+}
+
+.image-grid img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
